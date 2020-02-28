@@ -6,9 +6,16 @@ class Student
   #  with DB[:conn]  
   
   def initialize (name, grade, id = nil)
-    @name = name,
-    @grade = grade,
+    @name = name
+    @grade = grade
     @id = id
+  end
+  
+  def self.create_table
+    
+    sql = <<-SQL
+    CREATE TABLE students
+    
   end
   
 end
